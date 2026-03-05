@@ -5,20 +5,20 @@
 class Vulnex < Formula
   desc "Multi-source vulnerability intelligence CLI"
   homepage "https://github.com/AnasSahel/vulnex"
-  version "1.3.0"
+  version "1.4.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/AnasSahel/vulnex/releases/download/v1.3.0/vulnex_1.3.0_darwin_amd64.tar.gz"
-      sha256 "47dd202ccac668ccd40876bf9dc28941bef6b302de9fc760f0baddbb597d0adc"
+      url "https://github.com/AnasSahel/vulnex/releases/download/v1.4.0/vulnex_1.4.0_darwin_amd64.tar.gz"
+      sha256 "e0183756e61e5fe8d66e883a3212eb1d0ecb49da5a12f7a0a6fae49a53c0979b"
 
       define_method(:install) do
         bin.install "vulnex"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/AnasSahel/vulnex/releases/download/v1.3.0/vulnex_1.3.0_darwin_arm64.tar.gz"
-      sha256 "6d05fceb323800c70785fe00b2c4fa902b4ee4df91ead2b4f0e16b266f24ba95"
+      url "https://github.com/AnasSahel/vulnex/releases/download/v1.4.0/vulnex_1.4.0_darwin_arm64.tar.gz"
+      sha256 "6fe970a89b5d81ec692bea9e2936aafae5e3885843d71653a3ac044c78d4116a"
 
       define_method(:install) do
         bin.install "vulnex"
@@ -28,15 +28,15 @@ class Vulnex < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/AnasSahel/vulnex/releases/download/v1.3.0/vulnex_1.3.0_linux_amd64.tar.gz"
-      sha256 "bfd9aff13ccfa27fd481698797284ac975909e15772f353a8da3f8ee80963a39"
+      url "https://github.com/AnasSahel/vulnex/releases/download/v1.4.0/vulnex_1.4.0_linux_amd64.tar.gz"
+      sha256 "8625922e2d60e37590006a89fda4af2b7c8d6309aad2d19a9309a9010d5aea2e"
       define_method(:install) do
         bin.install "vulnex"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/AnasSahel/vulnex/releases/download/v1.3.0/vulnex_1.3.0_linux_arm64.tar.gz"
-      sha256 "a0dfaed23630a96f94b3b90519ef2f3c5dd5973bd77923c2b726acfa263e3614"
+      url "https://github.com/AnasSahel/vulnex/releases/download/v1.4.0/vulnex_1.4.0_linux_arm64.tar.gz"
+      sha256 "74d148fcd7c8d5ba2fce527722c4ea7c9f2103c9c98f748cf880525b7e4b4d77"
       define_method(:install) do
         bin.install "vulnex"
       end
